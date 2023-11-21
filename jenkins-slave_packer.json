@@ -1,0 +1,19 @@
+{
+    "builders": [{
+      "type": "azure-arm",
+  
+      "client_id": "AZURE_CLIENT_ID",
+      "client_secret": "AZURE_CLIENT_SECRET",
+      "tenant_id": "AZURE_TENANT_ID",
+      "subscription_id": "AZURE_SUBSCRIPTION_ID",
+
+      "custom_managed_image_name": "jenkins-slave-packer-image",
+      "custom_managed_image_resource_group_name": "jenkins-slave-packer-rg",
+      "managed_image_resource_group_name": "jenkins-terraform-azure",
+      "managed_image_name": "jenkinsslave1-onprem",
+      "os_type": "Linux",
+      "location": "East US",
+    "vm_size": "Standard_B2ms"
+    }]
+    }
+  
